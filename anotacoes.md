@@ -15,7 +15,7 @@
 ~~~python
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', my_view) <- Representação da raiz de um site/ página inicial
+    path('', my_view) <- Representação da raiz de um site/página inicial
  ] 
 ~~~
 
@@ -57,3 +57,18 @@ urlpatterns = [
    path('contato/', contato),
  ] 
 ~~~
+--------------------------------------------------------
+## Templates e renderização de HTML no Django
+
+`from django.shortcuts import render`
+**Essa importação faz com que a gente tenha a capacidade de criar templates e o django vai ler e renderizar**
+**Utilizamos ele para fazer o chamado do template(no diretório template) para a pasta de views**
+
+**Utilização do render para fazer o chamado do template**
+~~~python
+def home(request):
+    return render(request, 'home.html')
+~~~
+
+**Devemos declarar o app que a gente criou em nosso projeto no arquivo settings.py**
+
