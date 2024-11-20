@@ -57,7 +57,7 @@ urlpatterns = [
    path('contato/', contato),
  ] 
 ~~~
---------------------------------------------------------
+---
 ## Templates e renderização de HTML no Django
 
 `from django.shortcuts import render`
@@ -72,3 +72,12 @@ def home(request):
 
 **Devemos declarar o app que a gente criou em nosso projeto no arquivo settings.py**
 
+---
+## NameSpaces
+
+Continuar dps
+**Usado para evitar conflitos em diretórios, arquivos estáticos, urls**
+
+## Arquivos Estáticos
+
+Os arquivos estáticos em Django são recursos que não mudam com frequência e são usados para estilizar e melhorar a interação do site. Eles incluem CSS, JavaScript, imagens, fontes e outros arquivos relacionados.
