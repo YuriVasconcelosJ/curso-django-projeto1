@@ -12,10 +12,13 @@
 
 ## Conhecimento HTTP
 
-# urlpatterns = [
-#    path('admin/', admin.site.urls),
-#    path('', my_view) <- Representação da raiz de um site/ página inicial
-# ]
+~~~python
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', my_view) <- Representação da raiz de um site/ página inicial
+ ] 
+~~~
+
 - **Métodos de requisição:**
  `GET(Solicita um recurso específico.), POST(Envia dados para o servidor para criar ou processar algo.), PUT(Atualiza completamente um recurso.), DELETE(Deleta algum recurso do servidor)`
 --------------------------------------------------------
