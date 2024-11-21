@@ -81,3 +81,11 @@ Continuar dps
 ## Arquivos Estáticos
 
 Os arquivos estáticos em Django são recursos que não mudam com frequência e são usados para estilizar e melhorar a interação do site. Eles incluem CSS, JavaScript, imagens, fontes e outros arquivos relacionados.
+
+## Função Render no Django
+~~~python
+O contexto são dados que a gente pode passar para o template utilizando o {{ name }} 
+render(request, 'recipes/home.html',context={
+        'name': 'Yuri Vasconcelos'
+    })
+~~~

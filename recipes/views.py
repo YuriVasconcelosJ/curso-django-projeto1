@@ -5,7 +5,9 @@ from django.http import HttpResponse
 
 # Sempre um método deve ter o argumento request
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'recipes/home.html', context={
+        'name': 'Yuri Vasconcelos'
+    })
 
 def sobre(request):
     return HttpResponse('Sobre')
